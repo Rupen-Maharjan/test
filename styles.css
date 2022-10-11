@@ -1,0 +1,95 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Logo */
+#log {
+    margin: 10px 34px;
+}
+
+#logo img {
+    display: flex;
+    height: 54px;
+    margin: 3px 6px;
+}
+
+/* Navigatin bar */
+#navbar {
+    display: flex;
+    position: relative;
+}
+
+#navbar::before {
+    content: "";
+background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul {
+    display: flex;
+    margin: 0;
+    list-style: none;
+}
+
+/* Ul, li and anchor */
+
+
+ul li a {
+    font-size: 1.3rem;
+    font-family: 'Inconsolata', monospace;
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: #665A48;
+}
+
+ul li a:hover {
+    color: #472D2D;
+    background: #967E76;
+    cursor: pointer;
+    transform: translate3d(10);
+}
+
+ul li a:active {
+    color: #472D2D;
+    background-color: #967E76;
+    cursor: pointer;
+}
+
+/* Home Section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 0 50px;
+    height: 600px;
+}
+#home::before{
+    content: "";
+    background: url("images/hacker-g518c799f1_1280.png") no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: white;
+    font-size: 3rem;
+}
+#home li{
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+}
